@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+   <title>Document</title>
+  <style>
+  *{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.top_bar1{
+  background-color: #FF867F;  
+  width: 75%;
+  height: 28px;
+  float: left;
+}
+
+.top_bar2{
+  background-color: #FF5252;
+  width: 25%;
+  height: 28px;
+  float: left;
+}
+
+.nav-bar{
+  padding-top: 28px;
+  width: 100%;
+  height: 76px;
+}
+
+.nav-bar #logo{ 
+  padding: 20px 28px;
+  line-height: 76px;
+}
+
+.nav-bar #logo img{
+  height: 20px;
+  vertical-align: middle;
+}
+
+.nav-bar #menu1{
+  float: right;
+  list-style: none;
+  padding-right: 40px;
+}
+
+.nav-bar #menu1 li{
+  float: left;
+  line-height: 76px;
+}
+
+.nav-bar #menu1 li a{
+  font-size: 12px;
+  margin-left: 24px;
+  text-decoration: none;
+  color: #424242;
+  
+}
+
+.icon-bar{
+  float: right;
+  line-height: 76px;
+  padding-right: 20px;
+}
+
+.icon-bar img{
+  height: 36px;
+  vertical-align: middle;
+  margin-left: 16px;
+}
+
+
+.header{
+  height: 400px;
+  background-image:url("https://i.postimg.cc/cCzJgFv4/7.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-info{
+  height: 136px;
+}
+
+#headex-name{
+  font-size: 32px;
+  padding-left: 8px;
+  padding-top: 12px;
+  font-weight: bold;
+  color: #1B1B1B;
+}
+
+#headex-date{
+  font-size: 16px;
+  padding-left: 12px;
+  padding-top: 8px;
+  font-weight: bold;
+  color: #1b1b1b;
+}
+
+hr{
+  background-color: #1b1b1b;
+  height: 2px;
+}
+
+.main-nav{
+  height: 128px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-nav #menu2{
+  text-align: center;
+  list-style: none;
+}
+
+.main-nav #menu2 li{
+  line-height: 128px;
+  display: inline-block;
+}
+
+.main-nav #menu2 li a {
+  font-size: 24px;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-decoration: none;
+  color: #1b1b1b;
+  vertical-align: middle;
+}
+
+#now{
+  font-weight: bold;
+}
+
+.content_recom #cont-name1{
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.content_recom{
+  width: 100%;
+  height: 110%;
+}
+
+.container_recom{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1104px;
+}
+
+.img1{
+  float: left;
+  box-shadow: 10px 10px 5px #424242;
+  height: 418px;
+}
+.img2{
+  float: left;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  box-shadow: 10px 10px 5px #424242;
+  height: 194px;
+}
+
+.img3{
+  float: left;
+  margin-left: 40px;
+  margin-top: 5px;
+  box-shadow: 10px 10px 5px #424242;
+  height: 194px;
+}
+
+.img1:hover {
+  transform: scale(1.05);
+  transition: transform 1s;
+  filter: brightness(70%);
+}
+
+.img2:hover {
+  transform: scale(1.05);
+  transition: transform 1s;
+  filter: brightness(70%);
+}
+
+.img3:hover {
+  transform: scale(1.05);
+  transition: transform 1s;
+  filter: brightness(70%);
+}
+
+#pic1-name{
+  font-size: 16px;
+  font-weight: bold;
+  color: #1b1b1b;  
+}
+
+.contents1 #cont-name1{
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.contents1{
+  witdth: 100%;
+  height: 110%;
+  background-color: #e6e6e6;
+  margin-top: 64px;
+}
+
+.container1{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1104px;
+}
+
+.cont-pic1{
+  float: left;
+  margin-right: 40px;
+}
+
+.cont-pic1 img{
+  box-shadow: 10px 10px 5px #424242;
+}
+
+.cont-pic1:hover img {
+  transform: scale(1.05);
+  transition: transform 1s;
+  filter: brightness(70%);
+}
+
+.cont-text{
+  padding-top: 8px; 
+}
+
+.cont-text p{
+  margin-bottom: 4px;
+}
+
+
+#pic1-name{
+  font-size: 16px;
+  font-weight: bold;
+  color: #1b1b1b;  
+}
+
+#pic1-location{
+  font-size: 12px;
+}
+
+#pic1-date{
+  font-size: 12px;
+  color: #424242;
+  padding-bottom: 16px;
+}
+
+.clearfix{
+  clear: left;
+}
+
+.middle_hr{
+}
+
+#footer_hr{
+  margin-top: 64px;
+  margin-bottom: 24px;
+}
+
+.footer{
+  height: 136px;
+}
+
+.footer-list #footer-1{
+  float: left;
+  list-style: none;
+  padding-left: 108px;
+  margin: 0;
+}
+
+.footer-list #footer-1 li{
+  margin-bottom: 8px;
+}
+
+.footer-list #footer-1 a{
+  font-size: 12px;
+  text-decoration: none;
+  color: #424242;
+}
+
+.footer-info{
+  font-size: 12px; 
+  padding-left: 16px;
+  line-height: 28px;
+  float: left;
+}
+
+.footer-tel{
+  float: right;
+  margin-top: 12px;
+  padding-right: 108px;
+}
+
+.footer-tel p{
+  color: #1b1b1b;
+  font-weight: bold;
+}
+
+.footer-language{
+  width: 104px;
+  height: 40px;
+  margin-top: 12px;
+  margin-left: 8px;
+  border: 2px solid #1b1b1b
+}
+
+.footer-language p{
+  text-align: center;
+  line-height: 40px;
+  font-weight: normal;
+}
+  </style> 
+ </head>
+ <body>
+   <div class = "top_bar1"></div>
+   <div class = "top_bar2"></div>
+   <div class = "nav-bar">
+    <a href ="file:///C:/Users/rhdus/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/%EC%9B%B9%ED%8D%BC%EB%B8%94%EB%A6%AC%EC%8B%B1%EA%B8%B0%EC%B4%88%20%EA%B8%B0%EB%A7%90/final/index.html" id = "logo">
+     <img src ="https://i.postimg.cc/SNFYY1YP/1.png">
+    </a>  
+     
+     <div class = "icon-bar">
+       <img src ="https://i.postimg.cc/B6xgYHCg/menu-FILL0-wght400-GRAD0-opsz48.png">
+       <img src ="https://i.postimg.cc/T1fcZ17X/search-FILL0-wght400-GRAD0-opsz48.png">
+     </div>  
+     
+    <ul id = "menu1">
+      <li><a href = "#">뮤지컬</a><li>
+      <li><a href = "#">연극</a><li>
+      <li><a href = "#">공연</a><li>
+      <li><a href = "#">전시</a><li>
+      <li><a href = "#">레저</a><li>
+      <li><a href = "#">아동/가족</a><li> 
+     </ul>
+   </div>
+   
+   <div class = "header">     
+   </div>
+   
+   <div class = "header-info">
+     <p id = "headex-name">우연히 웨스 앤더슨 - 어디에 있든, 영감은 당신 눈앞에 있다_</p>
+     <p id = "headex-date">2021.11.27 ~2022.7.24</p>
+   </div>
+   
+   <hr>
+   
+   <div class = "main-nav">
+     <ul id = "menu2">
+      <li><a href = "file:///C:/Users/rhdus/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/%EC%9B%B9%ED%8D%BC%EB%B8%94%EB%A6%AC%EC%8B%B1%EA%B8%B0%EC%B4%88%20%EA%B8%B0%EB%A7%90/final/index.html">전체</a><li>
+      <li><a id = "now" href = "#">사진전</a><li>
+      <li><a href = "#">특별전</a><li>
+      <li><a href = "#">설치미술</a><li>
+      <li><a href = "#">미디어아트</a><li>
+      <li><a href = "#">회화</a><li> 
+     </ul>
+   </div>
+   
+   <div class = "content_recom">
+   <div class = "container_recom">  
+     <p id = "cont-name1">오늘은 이 전시 어떠세요?_</p>  
+   <div class = "recom_pic1">
+     <div class = "recommend">
+      <div class = "img1">
+        <a href = "#">
+        <img src = "https://i.postimg.cc/sD4qwMjs/8.png">
+        </a>
+      </div>
+   <div class = "img2">
+     <a href = "#">
+     <img src = "https://i.postimg.cc/CKMRzP7k/10.png">
+     </a>  
+   </div>
+   <div class = "img3">
+     <a href = "#">
+     <img src = "https://i.postimg.cc/mgycZfYT/9.png">
+     </a>  
+   </div>
+     <div class = "clearfix"></div>
+   </div>
+   </div>
+   </div>
+     
+   
+   
+   <div class = "contents1">
+   <div class = "container1">  
+     <p id = "cont-name1">현재 전시전_</p>  
+   <div class = "cont-pic1">
+     <a href = "#">
+     <img src = "https://i.postimg.cc/kMz6pF9C/main-contents3.png">
+     </a>
+   <div class = "cont-text">  
+     <p id = "pic1-name">라이프 사진전<br>:더 클래식 컬랙션</p>
+     <p id = "pic1-location">Museum 209</p>
+     <p id = "pic1-date">2022.4.25 ~ 2022.8.28</p>
+    </div> 
+   </div> 
+     
+    <div class = "cont-pic1">
+     <a href = "#"> 
+     <img src = "https://i.postimg.cc/CMqXrxMz/main-contents6.png">
+     </a>  
+   <div class = "cont-text">  
+     <p id = "pic1-name">앙리 카르티에 브레송 사진전<br>:결정적 순간</p>
+     <p id = "pic1-location">예술의전당 한가람미술관 3층</p>
+     <p id = "pic1-date">2022.6.10 ~ 2022.10.2</p>
+    </div> 
+   </div> 
+     
+    <div class = "cont-pic1">
+     <a href = "#"> 
+     <img src = "https://i.postimg.cc/66LZMvPH/11.png">
+     </a>  
+   <div class = "cont-text">  
+     <p id = "pic1-name">에릭 요한슨 사진전<br>:비욘드 이미지네이션
+     </p>
+     <p id = "pic1-location">63아트</p>
+     <p id = "pic1-date">2021.9.16 ~2022.6.30</p>
+    </div>  
+   </div> 
+     <div class = "clearfix"></div>
+   </div>
+   </div>
+   
+   <hr id = "footer_hr">
+   
+   <div class = "footer">
+     <div class = "footer-list">
+     <ul id = "footer-1">
+      <li><a href = "#">채용공고</a><li>
+      <li><a href = "#">우수회원제도</a><li>
+      <li><a href = "#">회사소개</a><li>
+      <li><a href = "#">재휴광고안내</a><li> 
+     </ul>
+     </div>
+     <div class = "footer-info">
+       <p>주식회사 인터파크사업자정보확인<br>06168 서울시 강남구 삼성로 512 삼성동빌딩 10층(삼성동) ㅣ 대표이사 김강세 ㅣ 사업자등록번호 824-81-02515<br>통신판매업신고 2022-서울강남-02179 ㅣ Copyright 2015 INTERPARK All rights reserved.</p>
+   </div>
+   <div class = "footer-tel">
+     <p>TEL: 1544-1555</p>
+    <div class = "footer-language">
+      <p>KOREAN</p>
+    <div>  
+   </div>  
+ </body>
+ </html>
